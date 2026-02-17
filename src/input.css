@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+/* custom color */
+@theme {
+  --font-fontPrimary: 'Outfit', sans-serif;
+}
+
+/* custom Class */
+@layer utilities {
+  body {
+    font-family: var(--font-fontPrimary);
+  }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .phoneWidth {
+    @apply min-h-screen max-w-md mx-auto;
+  }
+  .containers {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark,
+    cupcake;
+}
