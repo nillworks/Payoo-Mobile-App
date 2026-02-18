@@ -3,6 +3,8 @@
 
 /* custom color */
 @theme {
+  --color-primaryColor: #3b25c1;
+
   --font-fontPrimary: 'Outfit', sans-serif;
 }
 
