@@ -8,6 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!-- font-awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- favicons link -->
   <link rel="shortcut icon" href="../assets/Logo-full.png" type="image/x-icon">
   <!-- Link Output Css -->
@@ -15,7 +19,105 @@
   <title>Payoo | Home</title>
 </head>
 
-<body>
+<body class="phoneWidth bg-[#f4f5f7]">
+
+  <header>
+
+    <div class="shadow-sm flex items-center justify-between py-5 px-2">
+
+
+      <!-- left content logo and Available Balance -->
+      <div class="flex items-center gap-2">
+        <img class="w-15" src="../assets/logo.png" alt="img">
+
+        <!-- Available Balance Details -->
+        <div class="flex flex-col">
+          <p>$<span id="balanceAvailable" class="text-neutral font-bold text-lg">45000</span></p>
+          <p class="text-[#080808]/50">Available Balance</p>
+        </div>
+
+      </div>
+
+      <!-- right Content -->
+      <div class="">
+        <a href="../index.html" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+      </div>
+
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- Home dashboard  -->
+    <section>
+
+      <div class="py-8 px-4 space-y-10">
+
+        <!-- title and subtitle -->
+        <div>
+          <h2 class="text-2xl font-bold text-neutral">Welcome to Pay<span class="text-primary">oo</span></h2>
+          <p class="text-[#080808]/50">Enjoy easy and convenient financial services with us. <br> Cashout charge is low
+            and</p>
+        </div>
+
+
+        <div class="grid gap-4 grid-cols-3">
+
+          <!-- item 1 -->
+          <div class="py-5 px-2 text-center space-y-4 shadow">
+            <button class="btn text-center">
+              <img src="../assets/opt-1.png" alt="img">
+            </button>
+            <p class="text-[#080808]/50">Add Money</p>
+          </div>
+          <!-- item 2 -->
+          <div class="py-5 px-2 text-center space-y-4 shadow">
+            <button class="btn text-center">
+              <img src="../assets/opt-2.png" alt="img">
+            </button>
+            <p class="text-[#080808]/50">CashOut</p>
+          </div>
+          <!-- item 3 -->
+          <div class="py-5 px-2 text-center space-y-4 shadow">
+            <button class="btn text-center">
+              <img src="../assets/opt-3.png" alt="img">
+            </button>
+            <p class="text-[#080808]/50">Transfer Money</p>
+          </div>
+          <!-- item 4 -->
+          <div class="py-5 px-2 text-center space-y-4 shadow">
+            <button class="btn text-center">
+              <img src="../assets/opt-4.png" alt="img">
+            </button>
+            <p class="text-[#080808]/50">Get Bonus</p>
+          </div>
+          <!-- item 5 -->
+          <div class="py-5 px-2 text-center space-y-4 shadow">
+            <button class="btn text-center">
+              <img src="../assets/opt-6.png" alt="img">
+            </button>
+            <p class="text-[#080808]/50">Pay Bill</p>
+          </div>
+          <!-- item 6 -->
+          <div class="py-5 px-2 text-center space-y-4 shadow">
+            <button class="btn text-center">
+              <img src="../assets/opt-1.png" alt="img">
+            </button>
+            <p class="text-[#080808]/50">Transactions</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Latest Payment -->
+
+
+  </main>
 
 </body>
 
