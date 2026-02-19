@@ -25,7 +25,7 @@ transferMoneyButton.addEventListener('click', () => {
   const newBalance = currentAmount - transferAmount;
   balanceElement.innerText = newBalance;
 
-  alert('Transfer Money Successful');
+  alert(`Transfer Money Successful 💰${transferAmount} Tk`);
 
   // console.log(userAccountNumber, transferAmount, pinNumber);
 });

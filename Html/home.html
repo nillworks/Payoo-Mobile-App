@@ -86,21 +86,21 @@
           </div>
           <!-- item 4 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button class="btn text-center">
+            <button onclick="showHidden('GetBonus')" class="btn text-center">
               <img src="../assets/opt-4.png" alt="img">
             </button>
             <p class="text-[#080808]/50">Get Bonus</p>
           </div>
           <!-- item 5 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button class="btn text-center">
+            <button onclick="showHidden('pay_bill')" class="btn text-center">
               <img src="../assets/opt-6.png" alt="img">
             </button>
             <p class="text-[#080808]/50">Pay Bill</p>
           </div>
           <!-- item 6 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button class="btn text-center">
+            <button onclick="showHidden('transactionHistory')" class="btn text-center">
               <img src="../assets/opt-1.png" alt="img">
             </button>
             <p class="text-[#080808]/50">Transactions</p>
@@ -280,6 +280,126 @@
       </div>
     </section>
 
+    <!-- Get Bonus  -->
+    <section id="GetBonus" class="hidden bg-[#f4f5f7] py-10 px-8 space-y-5 rounded-t-3xl">
+
+      <h2 class="text-2xl">Get Bonus</h2>
+
+      <!-- from section -->
+      <div class="flex items-center justify-center bg-white rounded-full">
+
+        <div class="card bg-base-100 w-full max-w-sm shrink-0">
+
+          <!-- card body -->
+          <div class="card-body">
+            <fieldset class="fieldset space-y-4">
+
+
+              <!-- Pin Number -->
+              <div>
+                <label class="label text-gray-500 font-medium text-lg">Enter Bonus Coupon</label>
+                <input id="couponD" minlength="4" maxlength="4" type="password"
+                  class="input border-none rounded-full outline-none bg-[#f4f5f7]" placeholder="Enter your coupon"
+                  required />
+                <button id="get_bonus_button"
+                  class="btn btn-neutral rounded-full bg-primaryColor outline-none border-none mt-4 w-full">Get
+                  Bonus</button>
+              </div>
+
+
+            </fieldset>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pay Bill Section -->
+    <section id="pay_bill" class="hidden bg-[#f4f5f7] py-10 px-8 space-y-5 rounded-t-3xl">
+
+      <h2 class="text-2xl">Pay Bill</h2>
+
+      <!-- from section -->
+      <div class="flex items-center justify-center bg-white rounded-full">
+
+        <div class="card bg-base-100 w-full max-w-sm shrink-0">
+
+          <!-- card body -->
+          <div class="card-body outline-none">
+            <fieldset class="fieldset space-y-4 ">
+
+              <!-- Select To Pay -->
+              <div>
+                <fieldset class="fieldset border-none">
+                  <legend class="fieldset-legend text-gray-500 text-lg">Select back</legend>
+                  <select id="BillSelect" class="select rounded-full bg-[#f4f5f7] border-none">
+                    <option value="" disabled selected>Select A Bank</option>
+                    <option value="DBBL">Dutch Bangla Bank (DBBL)</option>
+                    <option value="IBBL">Islami Bank Bangladesh (IBBL)</option>
+                    <option value="City">City Bank</option>
+                    <option value="Brac">BRAC Bank</option>
+                    <option value="EBL">Eastern Bank (EBL)</option>
+                    <option value="Sonali">Sonali Bank</option>
+                  </select>
+                </fieldset>
+              </div>
+
+              <!--Biller Account Number -->
+              <div class="space-y-2">
+                <label class="label text-gray-500 font-medium text-lg">Biller Account Number</label>
+                <input id="biller_Number_input" type="tel" maxlength="11" pattern="[0-9]{11}" inputmode="numeric"
+                  class="input border-none rounded-full outline-none bg-[#f4f5f7]" placeholder="Enter account number"
+                  required />
+              </div>
+
+              <!-- Amount to Add -->
+              <div class="space-y-2">
+                <label class="label text-gray-500 font-medium text-lg">Amount to Pay</label>
+                <input id="AmountPayNumber" minlength="2" maxlength="10" type="number"
+                  class="input border-none rounded-full outline-none bg-[#f4f5f7]" placeholder="Add Amount to pay"
+                  required />
+              </div>
+
+              <!-- Pin Number -->
+              <div class="space-y-2">
+                <label class="label text-gray-500 font-medium text-lg">Pin Number</label>
+                <input id="add_many_pin" minlength="4" maxlength="4" type="password"
+                  class="input border-none rounded-full outline-none bg-[#f4f5f7]"
+                  placeholder="Enter 4 digit pin number" required />
+                <button id="PayNow-add-btn"
+                  class="btn btn-neutral rounded-full bg-primaryColor outline-none border-none mt-4 w-full">Pin
+                  Number</button>
+              </div>
+
+
+            </fieldset>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Transaction History Section -->
+    <section id="transactionHistory" class="hidden bg-[#f4f5f7]">
+
+      <!-- Title and subtile -->
+      <div class="flex justify-between px-3 items-center py-4">
+        <h2 class="text-2xl pl-4">Transaction History</h2>
+        <a href="#">View All</a>
+      </div>
+
+      <!-- Transaction History -->
+      <div id="History" class="bg-[#f4f5f7] py-10 px-2 shadow-sm">
+
+        <!-- item 1 -->
+        <div class="Transaction_card p-5 bg-white rounded-2xl">1</div>
+
+      </div>
+
+    </section>
 
   </main>
 
@@ -288,6 +408,7 @@
   <script src="../Js/addMany.js"></script>
   <script src="../Js/cashout.js"></script>
   <script src="../Js/transfer.js"></script>
+  <script src="../Js/getBonus.js"></script>
 
 </body>
 

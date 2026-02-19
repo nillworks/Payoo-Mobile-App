@@ -32,9 +32,17 @@ function getBalance(id) {
 function showHidden(id) {
   const addMany = document.getElementById('Add_many');
   const cashOut = document.getElementById('Cash_Out');
+  const transferMoney = document.getElementById('transferMoney');
+  const getBonus = document.getElementById('GetBonus');
+  const payBill = document.getElementById('pay_bill');
+  const transactionHistory = document.getElementById('transactionHistory');
 
   addMany.classList.add('hidden');
   cashOut.classList.add('hidden');
+  transferMoney.classList.add('hidden');
+  getBonus.classList.add('hidden');
+  payBill.classList.add('hidden');
+  transactionHistory.classList.add('hidden');
 
   const select = document.getElementById(id);
   select.classList.remove('hidden');
