@@ -3366,6 +3366,12 @@
   .bg-\[\#f4f5f7\] {
     background-color: #f4f5f7;
   }
+  .bg-\[\#f4f5f7\]\/5 {
+    background-color: color-mix(in oklab, #f4f5f7 5%, transparent);
+  }
+  .bg-\[\#f4f5f7\]\/50 {
+    background-color: color-mix(in oklab, #f4f5f7 50%, transparent);
+  }
   .bg-base-100 {
     background-color: var(--color-base-100);
   }

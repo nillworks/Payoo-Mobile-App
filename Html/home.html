@@ -19,7 +19,7 @@
   <title>Payoo | Home</title>
 </head>
 
-<body class="phoneWidth bg-white">
+<body class="phoneWidth bg-white shadow-sm">
 
 
   <!-- Header Area Section -->
@@ -368,7 +368,7 @@
               <!-- Pin Number -->
               <div class="space-y-2">
                 <label class="label text-gray-500 font-medium text-lg">Pin Number</label>
-                <input id="add_many_pin" minlength="4" maxlength="4" type="password"
+                <input id="pays_many_pin" minlength="4" maxlength="4" type="password"
                   class="input border-none rounded-full outline-none bg-[#f4f5f7]"
                   placeholder="Enter 4 digit pin number" required />
                 <button id="PayNow-add-btn"
@@ -387,7 +387,7 @@
 
 
     <!-- Transaction History Section -->
-    <section id="transactionHistory" class=" bg-[#f4f5f7]">
+    <section id="transactionHistory" class="hidden bg-[#f4f5f7]">
 
       <!-- Title and subtile -->
       <div class="flex justify-between px-3 items-center py-4">
@@ -397,6 +397,10 @@
 
       <!-- Transaction History -->
       <div id="History" class="grid grid-cols-1 gap-5 bg-[#f4f5f7] py-2 px-2 shadow-sm rounded-2xl">
+
+
+        <!-- Dom Update -->
+
 
       </div>
 
@@ -408,8 +412,9 @@
   <script src="../Js/machine.js"></script>
   <script src="../Js/addMany.js"></script>
   <script src="../Js/cashout.js"></script>
-  <script src="../Js/transfer.js"></script>
   <script src="../Js/getBonus.js"></script>
+  <script src="../Js/payBill.js"></script>
+  <script src="../Js/transfer.js"></script>
 
 </body>
 
