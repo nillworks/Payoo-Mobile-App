@@ -1,124 +1,128 @@
-# 💳 PAYOO – Smart Mobile Financial Services (MFS)
+# 💳 PAYOO - Mobile Financial Services (MFS) Web App
 
-PAYOO is a smart and modern **Mobile Financial Services (MFS)** web application that delivers a seamless digital banking experience.
+PAYOO is a smart Mobile Financial Services (MFS) web application that provides a seamless and user-friendly digital banking experience.
 
-Built using **HTML**, **Tailwind CSS**, **DaisyUI**, and **Vanilla JavaScript**, this project provides a clean and user-friendly platform for managing financial transactions securely and efficiently.
-
----
-
-## 🚀 Live Features
-
-- 🔐 Simple Login Interface  
-- 🏠 Home Dashboard with Account Balance  
-- 💰 Add Money  
-- 💵 Cash Out (PIN Verification Required)  
-- 📤 Secure Money Transfer  
-- 🎁 Bonus Rewards System  
-- 📊 Transaction History Tracking  
-- 🔒 PIN Security for Every Transaction  
-- 📱 Fully Responsive UI (DaisyUI + TailwindCSS)
+This project was built as part of **Programming Hero – Module 24 Assignment**.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Live Demo
+
+🌐 Live Link: https://payooapps.netlify.app/ 
+
+
+## 🔐 Demo Login Credentials
+
+- 📱 Phone Number: 01612475642  
+- 🔑 PIN Number: 1234  
+
+---
+
+## 🛠️ Technology Stack
 
 - HTML5  
-- Tailwind CSS v4  
+- CSS3  
+- Tailwind CSS  
 - DaisyUI  
-- JavaScript  
-- Node.js (for Tailwind CLI build process)
+- Vanilla JavaScript  
 
 ---
 
-## 📦 Installation & Setup Guide
+## ✨ Core Features
 
-Follow these steps to run the project locally:
+### 🔑 Secure Login System
+- Login with Phone Number & PIN
+- Basic validation system
 
-### 1️⃣ Clone the Repository
+### 💰 Add Money
+- Requires 11-digit bank account number
+- Input validation included
+- Balance updates dynamically
+- Transaction automatically added to History
+- Date & Time tracking
 
-```bash
-git clone git@github.com:nillworks/Payoo-Mobile-App.git
-cd payoo
-```
+### 💸 Cash Out
+- Requires phone number & PIN verification
+- Prevents withdrawal if balance is insufficient
+- Instant balance deduction
+- History record added with timestamp
 
-### 2️⃣ Install Dependencies
+### 🔄 Transfer Money
+- Transfer money to any valid number
+- Supports random 11-digit account number generation
+- Real-time balance update
+- Auto transaction history entry
 
-Make sure you have **Node.js** installed.
+### 🧾 Pay Bill
+- Simulated bill payment system
+- Deducts balance after validation
+- Bill payment stored in transaction history
 
-```bash
-npm install
-```
+### 🎁 Bonus Coupon System
+- Apply bonus coupon codes
+- Bonus amount adds to balance
+- Bonus transaction saved in history
 
-### 3️⃣ Run Tailwind Build Command (Watch Mode)
+### 📊 Transaction History
+Tracks all:
+- Add Money  
+- Cash Out  
+- Transfer  
+- Pay Bill  
+- Bonus  
 
-```bash
-npm run build:css
-```
+Each record includes:
+- Transaction Type  
+- Amount  
+- Date  
+- Time  
 
-This will generate the CSS file from:
+Fully dynamic DOM-based update system.
 
-```
-src/input.css ➜ src/output.css
-```
+---
+---
 
-And it will automatically watch for changes.
+## 🎯 Project Tasks (Programming Hero – Module 24)
 
-### 4️⃣ Open the Project
+- Add Money  
+- Cash Out  
+- Transfer Money  
+- Pay Bill  
+- Get Bonus  
+- Maintain Transaction History  
 
-Now open `index.html` in your browser.
+All required features are fully functional and enhanced with additional improvements.
 
 ---
 
-## 📜 package.json Scripts
+## 📈 Learning Outcomes
 
-```json
-"scripts": {
-  "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
-}
-```
-
----
-
-## 📦 Dependencies
-
-```json
-"dependencies": {
-  "@tailwindcss/cli": "^4.1.18",
-  "daisyui": "^5.5.18",
-  "tailwindcss": "^4.1.18"
-}
-```
-
-
----
-
-## 🔐 Security System
-
-- Every financial transaction requires PIN verification.
-- Prevents unauthorized money transfers or withdrawals.
-- Enhances user account protection.
-
----
-
-## 🎯 Project Purpose
-
-This project was created to practice:
+This project helped me improve my skills in:
 
 - DOM Manipulation  
-- JavaScript Financial Logic  
-- Secure Transaction Validation  
-- Tailwind CSS v4 Setup  
-- DaisyUI Component Design  
-- Responsive Web Design  
+- Event Handling  
+- Form Validation  
+- Dynamic UI Update  
+- Transaction Tracking Logic  
+- UI Design using DaisyUI  
 
 ---
 
-## 👨‍💻 Author
+## 🔍 Looking for Feedback
 
-Developed by **Shipon Roy**
+I would really appreciate it if you could review my code and share your valuable feedback:
+
+- Code structure improvements  
+- Best practices suggestions  
+- Performance optimization  
+- UI/UX enhancement ideas  
+- Refactoring advice  
+
+Your feedback will help me grow as a developer 🚀
 
 ---
 
-## ⭐ Support
+## 🙌 Thank You
 
-If you like this project, please give it a ⭐ on GitHub.
+If you like this project, feel free to ⭐ star the repository and connect with me!
+
