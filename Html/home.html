@@ -114,10 +114,71 @@
 
   <main>
 
+    <!-- Add Money -->
+    <section class="bg-[#f4f5f7] py-10 px-8 space-y-5 rounded-t-3xl">
+
+      <h2 class="text-2xl">Add Money</h2>
+
+      <!-- from section -->
+      <div class="flex items-center justify-center bg-white rounded-full">
+
+        <div class="card bg-base-100 w-full max-w-sm shrink-0">
+
+          <!-- card body -->
+          <div class="card-body outline-none">
+            <fieldset class="fieldset space-y-4 ">
+
+              <div>
+                <fieldset class="fieldset border-none">
+                  <legend class="fieldset-legend text-gray-500 text-lg">Select A Bank</legend>
+                  <select id="bankSelect" class="select rounded-full bg-[#f4f5f7] border-none">
+                    <option value="" disabled selected>Select A Bank</option>
+                    <option value="DBBL">DBBL</option>
+                    <option value="IBBL">IBBL</option>
+                    <option value="City Bank">City Bank</option>
+                  </select>
+                </fieldset>
+              </div>
+
+              <!-- Bank Account Number -->
+              <div class="space-y-2">
+                <label class="label text-gray-500 font-medium text-lg">Bank Account Number</label>
+                <input id="Account_Number_input" type="tel" maxlength="11" pattern="[0-9]{11}" inputmode="numeric"
+                  class="input border-none rounded-full outline-none bg-[#f4f5f7]"
+                  placeholder="Enter 11 digit account number" required />
+              </div>
+
+              <!-- Amount to Add -->
+              <div class="space-y-2">
+                <label class="label text-gray-500 font-medium text-lg">Add Amount to withdraw</label>
+                <input id="AmountAddNumber" minlength="2" maxlength="10" type="number"
+                  class="input border-none rounded-full outline-none bg-[#f4f5f7]"
+                  placeholder="Enter amount to withdraw" required />
+              </div>
+
+              <!-- Pin Number -->
+              <div class="space-y-2">
+                <label class="label text-gray-500 font-medium text-lg">Pin Number</label>
+                <input id="add_many_pin" minlength="4" maxlength="4" type="password"
+                  class="input border-none rounded-full outline-none bg-[#f4f5f7]"
+                  placeholder="Enter 4 digit pin number" required />
+                <button id="money-add-btn"
+                  class="btn btn-neutral rounded-full bg-primaryColor outline-none border-none mt-4 w-full">Add
+                  Money</button>
+              </div>
+
+
+            </fieldset>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
 
     <!-- Cash Out -->
-    <section class="bg-[#f4f5f7] py-10 px-8 space-y-5 rounded-t-3xl">
+    <section class="hidden bg-[#f4f5f7] py-10 px-8 space-y-5 rounded-t-3xl">
 
       <h2 class="text-2xl">Cash Out</h2>
 
@@ -170,7 +231,9 @@
   </main>
 
   <!-- Js link cashOut.js  -->
-  <script type="module" src="../Js/cashout.js"></script>
+  <script src="../Js/machine.js"></script>
+  <script src="../Js/addMany.js"></script>
+  <script src="../Js/cashout.js"></script>
 
 </body>
 

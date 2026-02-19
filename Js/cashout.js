@@ -1,13 +1,19 @@
+// import getValueFromInput from './machine';
 const CashOutButton = document.getElementById('CashOutButton-btn');
 
+// function getValueFromInput(id) {
+//   const getElementValue = document.getElementById(id).value;
+//   console.log(id, getElementValue);
+//   return getElementValue;
+// }
+
 // Convert Bg(0n)
+
 CashOutButton.addEventListener('click', () => {
   // All Get Document
-  const getAgentNumber = document.getElementById('agent_input').value.trim();
-  const getPinNumber = document.getElementById('cashOut_pin').value;
-  const getAvailableAmount = Number(
-    document.getElementById('cashOutBalance').value,
-  );
+  const getAgentNumber = getValueFromInput('agent_input');
+  const getPinNumber = getValueFromInput('cashOut_pin');
+  const getAvailableAmount = Number(getValueFromInput('cashOutBalance'));
   const balanceElement = document.getElementById('balanceAvailable');
   const balance = Number(balanceElement.innerText);
 

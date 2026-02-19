@@ -7,9 +7,9 @@ loginButton.addEventListener('click', () => {
 
   // match pin and mobile number user login
   if (numberInput.value === '01612475642' && Number(pinInput.value) === 1234) {
-    console.log('Login Success');
+    alert('Login Success');
     window.location.assign('../Html/home.html');
   } else {
-    console.log('Login Failed');
+    alert('Login Failed');
   }
 });
