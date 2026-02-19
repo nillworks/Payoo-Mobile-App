@@ -1,17 +1,10 @@
 // import getValueFromInput from './machine';
 const CashOutButton = document.getElementById('CashOutButton-btn');
-
-// function getValueFromInput(id) {
-//   const getElementValue = document.getElementById(id).value;
-//   console.log(id, getElementValue);
-//   return getElementValue;
-// }
-
 // Convert Bg(0n)
 
 CashOutButton.addEventListener('click', () => {
   // All Get Document
-  const getAgentNumber = getValueFromInput('agent_input');
+  const getAgentNumber = getStringValueInput('agent_input');
   const getPinNumber = getValueFromInput('cashOut_pin');
   const getAvailableAmount = Number(getValueFromInput('cashOutBalance'));
   const balanceElement = document.getElementById('balanceAvailable');
@@ -20,9 +13,10 @@ CashOutButton.addEventListener('click', () => {
   // agent Number valid
   if (getAgentNumber.length !== 11 || isNaN(getAgentNumber))
     return alert('Invalid Agent Number');
+  console.log(getPinNumber);
 
   // Pin Number Valid
-  if (getPinNumber !== '1234') return alert('Invalid PIN');
+  if (getPinNumber !== 1234) return alert('Invalid PIN');
 
   // Balance valid
   if (!getAvailableAmount || getAvailableAmount <= 0)

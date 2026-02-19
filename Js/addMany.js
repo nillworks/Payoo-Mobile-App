@@ -28,8 +28,19 @@ addManyButton.addEventListener('click', () => {
   let updateBalance = document.getElementById('balanceAvailable');
   const newBalance = getBalance('balanceAvailable') + Number(getAddManyAmount);
 
+  // Date Function
+  const now = new Date();
+
+  const formattedDate = now.toLocaleString('en-BD', {
+    dateStyle: 'medium',
+    timeStyle: 'short',
+  });
+
   // update Balance
   updateBalance.innerText = newBalance;
   console.log(newBalance);
-  alert('Add Many Successful');
+  alert(`✅ Add Money Successful!
+
+💰 Amount: ${getAddManyAmount} Tk
+📅 Date: ${formattedDate}`);
 });

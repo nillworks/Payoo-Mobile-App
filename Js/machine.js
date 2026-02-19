@@ -6,8 +6,11 @@ function getValueFromInput(id) {
   return value;
 }
 
-// Machine get innerTex
+function getStringValueInput(id) {
+  return document.getElementById(id).value.trim();
+}
 
+// Machine get innerTex
 function getInnerText(id) {
   return document.getElementById(id).innerText;
 }
@@ -23,4 +26,16 @@ function getInputNumber(id) {
 // get Balance
 function getBalance(id) {
   return Number(document.getElementById(id).innerText);
+}
+
+// machine id hidden.
+function showHidden(id) {
+  const addMany = document.getElementById('Add_many');
+  const cashOut = document.getElementById('Cash_Out');
+
+  addMany.classList.add('hidden');
+  cashOut.classList.add('hidden');
+
+  const select = document.getElementById(id);
+  select.classList.remove('hidden');
 }
