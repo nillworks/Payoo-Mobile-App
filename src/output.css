@@ -7,16 +7,21 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
     --container-md: 28rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
@@ -3266,6 +3271,9 @@
   .resize {
     resize: both;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3287,8 +3295,14 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -3346,6 +3360,9 @@
     --tw-border-style: none;
     border-style: none;
   }
+  .bg-\[\#080808\]\/5 {
+    background-color: color-mix(in oklab, #080808 5%, transparent);
+  }
   .bg-\[\#f4f5f7\] {
     background-color: #f4f5f7;
   }
@@ -3355,8 +3372,8 @@
   .bg-base-200 {
     background-color: var(--color-base-200);
   }
-  .bg-base-300 {
-    background-color: var(--color-base-300);
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-primaryColor {
     background-color: var(--color-primaryColor);
@@ -3379,6 +3396,12 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
@@ -3394,14 +3417,8 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
-  }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
-  }
-  .pl-5 {
-    padding-left: calc(var(--spacing) * 5);
   }
   .text-center {
     text-align: center;
@@ -3414,6 +3431,10 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -3422,14 +3443,27 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-wrap {
     text-wrap: wrap;
+  }
+  .text-\[\#080808\]\/5 {
+    color: color-mix(in oklab, #080808 5%, transparent);
   }
   .text-\[\#080808\]\/50 {
     color: color-mix(in oklab, #080808 50%, transparent);
   }
+  .text-\[\#080808\]\/70 {
+    color: color-mix(in oklab, #080808 70%, transparent);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
+  }
+  .text-green-500 {
+    color: var(--color-green-500);
   }
   .text-neutral {
     color: var(--color-neutral);

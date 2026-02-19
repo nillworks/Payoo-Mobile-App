@@ -34,7 +34,7 @@
 
         <!-- Available Balance Details -->
         <div class="flex flex-col">
-          <p>$<span id="balanceAvailable" class="text-neutral font-bold text-lg">45000</span></p>
+          <p>$ <span id="balanceAvailable" class=" font-bold text-lg text-green-500">45000</span></p>
           <p class="text-[#080808]/50">Available Balance</p>
         </div>
 
@@ -70,6 +70,7 @@
             </button>
             <p class="text-[#080808]/50">Add Money</p>
           </div>
+
           <!-- item 2 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
             <button onclick="showHidden('Cash_Out')" class="btn text-center">
@@ -77,6 +78,7 @@
             </button>
             <p class="text-[#080808]/50">CashOut</p>
           </div>
+
           <!-- item 3 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
             <button onclick="showHidden('transferMoney')" class="btn text-center">
@@ -84,6 +86,7 @@
             </button>
             <p class="text-[#080808]/50">Transfer Money</p>
           </div>
+
           <!-- item 4 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
             <button onclick="showHidden('GetBonus')" class="btn text-center">
@@ -91,17 +94,19 @@
             </button>
             <p class="text-[#080808]/50">Get Bonus</p>
           </div>
+
           <!-- item 5 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
             <button onclick="showHidden('pay_bill')" class="btn text-center">
-              <img src="../assets/opt-6.png" alt="img">
+              <img src="../assets/opt-5.png" alt="img">
             </button>
             <p class="text-[#080808]/50">Pay Bill</p>
           </div>
+
           <!-- item 6 -->
           <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
             <button onclick="showHidden('transactionHistory')" class="btn text-center">
-              <img src="../assets/opt-1.png" alt="img">
+              <img src="../assets/opt-6.png" alt="img">
             </button>
             <p class="text-[#080808]/50">Transactions</p>
           </div>
@@ -368,8 +373,8 @@
                   class="input border-none rounded-full outline-none bg-[#f4f5f7]"
                   placeholder="Enter 4 digit pin number" required />
                 <button id="PayNow-add-btn"
-                  class="btn btn-neutral rounded-full bg-primaryColor outline-none border-none mt-4 w-full">Pin
-                  Number</button>
+                  class="btn btn-neutral rounded-full bg-primaryColor outline-none border-none mt-4 w-full">Pay
+                  Now</button>
               </div>
 
 
@@ -383,19 +388,16 @@
 
 
     <!-- Transaction History Section -->
-    <section id="transactionHistory" class="hidden bg-[#f4f5f7]">
+    <section id="transactionHistory" class=" bg-[#f4f5f7]">
 
       <!-- Title and subtile -->
       <div class="flex justify-between px-3 items-center py-4">
-        <h2 class="text-2xl pl-4">Transaction History</h2>
-        <a href="#">View All</a>
+        <h2 class="text-2xl pl-4 font-semibold">Transaction History</h2>
+        <a href="#" class="text-[#080808]/50">View All</a>
       </div>
 
       <!-- Transaction History -->
-      <div id="History" class="bg-[#f4f5f7] py-10 px-2 shadow-sm">
-
-        <!-- item 1 -->
-        <div class="Transaction_card p-5 bg-white rounded-2xl">1</div>
+      <div id="History" class="grid grid-cols-1 gap-5 bg-[#f4f5f7] py-2 px-2 shadow-sm rounded-2xl">
 
       </div>
 

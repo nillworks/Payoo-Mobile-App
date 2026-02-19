@@ -13,6 +13,8 @@ addManyButton.addEventListener('click', () => {
   const getAccountNumber = getInputValue('Account_Number_input');
   const getAddManyAmount = getValueFromInput('AmountAddNumber');
   const getPinNumbers = getValueFromInput('add_many_pin');
+  const History = document.getElementById('History');
+  const createElement = document.createElement('div');
 
   // Condition Check Select Bank
   if (!getBankAccountName) return alert('Please Select A Bank Account');
@@ -43,4 +45,30 @@ addManyButton.addEventListener('click', () => {
 
 💰 Amount: ${getAddManyAmount} Tk
 📅 Date: ${formattedDate}`);
+
+  // History add
+  createElement.innerHTML = `<div
+          class="Transaction_card py-4 px-3 bg-white rounded-2xl flex justify-between items-center shadow-sm transition duration-300 hover:-translate-y-1.5">
+
+          <!-- text Details -->
+          <div class="flex items-center gap-3">
+            <div class="px-3 bg-[#080808]/5 py-3 rounded-full">
+              <img src="../assets/opt-1.png" alt="img">
+            </div>
+            <div>
+              <h2 class="text-[#080808]/70 text-lg font-semibold">Add Money</h2>
+              <p class="text-sm text-[#080808]/70">${formattedDate}</p>
+            </div>
+          </div>
+
+          <!-- icons -->
+          <div>
+            <img src="../assets/Frame.png" alt="icons">
+          </div>
+
+        </div>
+
+   </div>`;
+
+  History.appendChild(createElement);
 });
