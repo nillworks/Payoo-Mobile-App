@@ -25,6 +25,7 @@
   <!-- Header Area Section -->
   <header class="bg-white">
 
+    <!-- Navigation Menu -->
     <div class="sticky top-0 left-0 bg-base-200 z-10 shadow-sm flex items-center justify-between py-5 px-2">
 
 
@@ -34,15 +35,16 @@
 
         <!-- Available Balance Details -->
         <div class="flex flex-col">
-          <p>$ <span id="balanceAvailable" class=" font-bold text-lg text-green-500">45000</span></p>
-          <p class="text-[#080808]/50">Available Balance</p>
+          <p>$ <span id="balanceAvailable" class=" font-bold text-lg text-accent">52500</span></p>
+          <p class="text-primary">Available Balance</p>
         </div>
 
       </div>
 
       <!-- right Content -->
       <div class="">
-        <a href="../index.html" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
+        <a href="../index.html" class="btn btn-soft btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+          Out</a>
       </div>
 
 
@@ -56,7 +58,7 @@
         <!-- title and subtitle -->
         <div>
           <h2 class="text-2xl font-bold text-neutral">Welcome to Pay<span class="text-primary">oo</span></h2>
-          <p class="text-[#080808]/50">Enjoy easy and convenient financial services with us. <br> Cashout charge is low
+          <p class="text-[#080808]/50">Enjoy easy and convenient financial services with us. Cashout charge is low
             and</p>
         </div>
 
@@ -64,52 +66,50 @@
         <div class="grid gap-4 grid-cols-3">
 
           <!-- item 1 -->
-          <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button onclick="showHidden('Add_many')" class="btn text-center">
-              <img src="../assets/opt-1.png" alt="img">
-            </button>
-            <p class="text-[#080808]/50">Add Money</p>
-          </div>
+          <button onclick="showHidden('Add_many')"
+            class="group btn btn-accent btn-outline flex flex-col items-center text-center  py-15 space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
+            <img src="../assets/opt-1.png" alt="img">
+            <p class="text-[#080808]/50 group-hover:text-white">Add Money</p>
+          </button>
 
           <!-- item 2 -->
-          <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button onclick="showHidden('Cash_Out')" class="btn text-center">
-              <img src="../assets/opt-2.png" alt="img">
-            </button>
-            <p class="text-[#080808]/50">CashOut</p>
-          </div>
+          <button onclick="showHidden('Cash_Out')"
+            class="group btn btn-accent btn-outline flex flex-col items-center text-center  py-15 space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
+            <img src="../assets/opt-2.png" alt="img">
+            <p class="text-[#080808]/50 group-hover:text-white">CashOut</p>
+          </button>
 
           <!-- item 3 -->
-          <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button onclick="showHidden('transferMoney')" class="btn text-center">
-              <img src="../assets/opt-3.png" alt="img">
-            </button>
-            <p class="text-[#080808]/50">Transfer Money</p>
-          </div>
+          <button onclick="showHidden('transferMoney')"
+            class="group btn btn-accent btn-outline flex flex-col items-center text-center  py-15 space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
+            <img src="../assets/opt-3.png" alt="img">
+            <p class="text-[#080808]/50 group-hover:text-white">Transfer Money</p>
+          </button>
+
 
           <!-- item 4 -->
-          <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button onclick="showHidden('GetBonus')" class="btn text-center">
-              <img src="../assets/opt-4.png" alt="img">
-            </button>
-            <p class="text-[#080808]/50">Get Bonus</p>
-          </div>
+          <button onclick="showHidden('GetBonus')"
+            class="group btn btn-accent btn-outline flex flex-col items-center text-center  py-15 space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
+            <img src="../assets/opt-4.png" alt="img">
+            <p class="text-[#080808]/50 group-hover:text-white">Get Bonus</p>
+          </button>
+
 
           <!-- item 5 -->
-          <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button onclick="showHidden('pay_bill')" class="btn text-center">
-              <img src="../assets/opt-5.png" alt="img">
-            </button>
-            <p class="text-[#080808]/50">Pay Bill</p>
-          </div>
+          <button onclick="showHidden('pay_bill')"
+            class="group btn btn-accent btn-outline flex flex-col items-center text-center  py-15 space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
+            <img src="../assets/opt-5.png" alt="img">
+            <p class="text-[#080808]/50 group-hover:text-white">Pay Bill</p>
+          </button>
+
 
           <!-- item 6 -->
-          <div class="py-5 px-2 text-center space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
-            <button onclick="showHidden('transactionHistory')" class="btn text-center">
-              <img src="../assets/opt-6.png" alt="img">
-            </button>
-            <p class="text-[#080808]/50">Transactions</p>
-          </div>
+          <button onclick="showHidden('transactionHistory')"
+            class="group btn btn-accent btn-outline flex flex-col items-center text-center  py-15 space-y-4 shadow rounded-lg transition duration-300 hover:-translate-y-1.5">
+            <img src="../assets/opt-6.png" alt="img">
+            <p class="text-[#080808]/50 group-hover:text-white">Transactions</p>
+          </button>
+
 
         </div>
 
@@ -118,6 +118,8 @@
     </section>
 
   </header>
+
+  <!-- Main Section {Add Money , Cash Out , Transfer Money , Get Bonus , Pay Bill , Transaction}  -->
 
   <main>
 
@@ -391,8 +393,8 @@
 
       <!-- Title and subtile -->
       <div class="flex justify-between px-3 items-center py-4">
-        <h2 class="text-2xl pl-4 font-semibold">Transaction History</h2>
-        <a href="#" class="text-[#080808]/50">View All</a>
+        <h2 class="text-2xl text-success pl-4 font-semibold">Transaction History</h2>
+        <a href="#" class="text-primaryColor">View All</a>
       </div>
 
       <!-- Transaction History -->
