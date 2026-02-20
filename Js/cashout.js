@@ -57,7 +57,7 @@ CashOutButton.addEventListener('click', () => {
 
           <!-- icons -->
           <div>
-            <img src="../assets/Frame.png" alt="icons">
+            <p class="text-red-500 text-lg">- <span class="text-red-500">${getWithdrawAmount}</span> Tk</p>
           </div>
 
         </div>

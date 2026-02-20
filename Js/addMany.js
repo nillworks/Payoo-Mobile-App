@@ -63,7 +63,7 @@ addManyButton.addEventListener('click', () => {
 
           <!-- icons -->
           <div>
-            <img src="../assets/Frame.png" alt="icons">
+            <p class="text-green-500 text-lg">+ <span class="text-green-500">${getAddManyAmount}</span> Tk</p>
           </div>
 
         </div>
