@@ -8,7 +8,7 @@ This project was built as part of **Programming Hero – Module 24 Assignment**.
 
 ## 🚀 Live Demo
 
-🌐 Live Link: https://payooapps.netlify.app/ 
+🌐 Live Link: https://payoo-mobileapp.netlify.app/
 
 
 ## 🔐 Demo Login Credentials
