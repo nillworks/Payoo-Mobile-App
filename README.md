@@ -118,11 +118,7 @@ I would really appreciate it if you could review my code and share your valuable
 - UI/UX enhancement ideas  
 - Refactoring advice  
 
-Your feedback will help me grow as a developer 🚀
-
 ---
 
-## 🙌 Thank You
-
-If you like this project, feel free to ⭐ star the repository and connect with me!
+## Thanks for visiting my GitHub profile. Feel free to explore my projects and share your feedback.
 
